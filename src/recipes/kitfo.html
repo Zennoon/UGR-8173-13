@@ -11,8 +11,8 @@
     <header>
         <div>
             <h1><i class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
-            <form method="get" id="search">
-                <input placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
+            <form method="get">
+                <input id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
             </form>
             <label for="search" hidden>Search ethiopiancuisine.com</label>
             <nav>
@@ -126,11 +126,12 @@ know what <span lang="am">Koremima</span> is)</li>
     </div>
     <div>
         <h2>Comments</h2>
-        <form method="get" action="" id="comments">
-            <input placeholder="Enter your comment here">
-            <input type="submit" value="comment">
+        <form method="get" action="">
+            <input  id="comments" placeholder="Enter your comment here">
+            <input  id="comment_submit" type="submit" value="comment">
         </form>
         <label for="comments" hidden>A form to place comments regarding this recipe</label>
+        <label for="comment_submit" hidden>Submit Comment</label>
         <ul>
             <li>
                 An amazing recipe
