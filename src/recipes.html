@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes Of The Ethiopian Cuisine</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/4a80508866.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <h1><i class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
-            <form method="get">
-                <input id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
-            </form>
-            <label for="search" hidden>Search ethiopiancuisine.com</label>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./restaurants.html">Restaurants</a></li>
-                    <li><a href="./spices.html">Spices</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-    <div>
-        <h1>Ethiopian Recipes</h1>
+    <header class="header">
+        <h1 class="header__title heading"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
+        <form class="header__search_form" method="get">
+            <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
+        </form>
+        <label for="search" hidden>Search ethiopiancuisine.com</label>
+        <nav class="header__navigation">
+            <ul class="navigation_list">
+                <li class="navigation_list__item"><a class="nav_link" href="./index.html">Home</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="./recipes.html">Recipes</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="./restaurants.html">Restaurants</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="./spices.html">Spices</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="./about.html">About Us</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<main>
+    <div class="greyed_part">
+        <h1 class="heading">Ethiopian Recipes</h1>
         <p>
             In this page, you will find some of the most renowned dishes of the Ethiopian
 cuisine. <br>The links will redirect you to pages containing all the information needed to make the dishes with maximum ease.
@@ -38,22 +38,21 @@ cuisine. <br>The links will redirect you to pages containing all the information
             The recipes will provide the ingredients needed to cook the dish as well as <br>step-by-step instructions to make the dishes as neatly as possible. <br>You will also find the nutritional facts included so that you can fit it to your specific diet.
         </p>
     </div>
-    <div>
-        <h2>Available Recipes</h2>
-        <ul>
-            <li><a href="./recipes/dorowet.html"><span lang="am">Doro Wet</span></a><img src="./images/dorowet1.jpeg" alt="An image showcasing one of the most famous dishes in Ethiopia, Dorowet"></li>
-            <li><a href="./recipes/kitfo.html"><span lang="am">Kitfo</span></a><img src="./images/kitfo.jpeg" alt="An image displaying Kitfo, a native Ethiopian dish originating from the Gurage region"></li>
+    <div class="greyed_part">
+        <h2 class="heading">Available Recipes</h2>
+        <ul class="recipe_list">
+            <li class="recipe_list__item"><a class="awesome_link" href="./recipes/dorowet.html"><span lang="am">Doro Wet</span></a><img class="recipe_list__image image" src="./images/dorowet5.jpeg" alt="An image showcasing one of the most famous dishes in Ethiopia, Dorowet"></li>
+            <li class="recipe_list__item"><a class="awesome_link" href="./recipes/kitfo.html"><span lang="am">Kitfo</span></a><img class="recipe_list__image image" src="./images/kitfo.jpeg" alt="An image displaying Kitfo, a native Ethiopian dish originating from the Gurage region"></li>
         </ul>
     </div>
-    <footer>
-        <div>
-            <ul>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><ul>Socials<li><a href="https://www.twitter.com/User=Ethiopian Cuisine" target="_blank">Twitter</a></li>
-                                <li><a href="www.instagram.com/User=Ethiopian Cuisine" target="_blank">Instagram</a></li></ul></li>
-            </ul>
-        </div>
-    </footer>
+</main>
+<footer class="footer">
+    <ul class="footer_list">
+        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./about.html">About Us</a></li>
+        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./contact.html">Contact</a></li>
+        <li class="greyed_part footer_list__item"><ul><span>Socials</span><li><a class="awesome_link" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine</li>
+                        <li><a class="awesome_link" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></li>
+    </ul>
+</footer>
 </body>
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +10,60 @@
     <script src="https://kit.fontawesome.com/4a80508866.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <h1><i class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
-            <form method="get">
-                <input id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
-            </form>
-            <label for="search" hidden>Search ethiopiancuisine.com</label>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../recipes.html">Recipes</a></li>
-                    <li><a href="../restaurants.html">Restaurants</a></li>
-                    <li><a href="../spices.html">Spices</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-    <div>
-        <img src="../images/kitfo1.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
-        <img src="../images/kitfo2.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
-        <img src="../images/kitfo3.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
+    <header class="header">
+        <h1 class="header__title heading"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
+        <form class="header__search_form" method="get">
+            <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
+        </form>
+        <label for="search" hidden>Search ethiopiancuisine.com</label>
+        <nav class="header__navigation">
+            <ul class="navigation_list">
+                <li class="navigation_list__item"><a class="nav_link" href="../index.html">Home</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="../recipes.html">Recipes</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="../restaurants.html">Restaurants</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="../spices.html">Spices</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="../about.html">About Us</a></li>
+                <li class="navigation_list__item"><a class="nav_link" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<main class="greyed_part">
+    <h1 class="heading"><span lang="am">Kitfo</span></h1>
+    <div class="container_recipes">
+        <div class="sample_images_recipes">
+        <img class="sample_images__image" src="../images/kitfo1.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
+        <img class="sample_images__image" src="../images/kitfo2.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
+        <img class="sample_images__image" src="../images/kitfo3.jpeg" alt="An image of Kitfo, a spicy raw meat dish from the Gurage region">
     </div>
-    <div>
-        <h1><span lang="am">Kitfo</span></h1>
-        <p>A culinary specialty of the Gurage region of South Central Ethiopia, <span lang="am">Kitfo</span> is a rich and flavorful dish made <br>with
+    <div class="recipe_paragraphs section">
+        <p>A culinary specialty of the Gurage region of South Central Ethiopia, <span lang="am">Kitfo</span> is a rich and flavorful dish made with
             minced raw lean beef, spices (the classic Ethiopian spice blend known as Mitmita, and an herb-infused
-            <br>clarified butter known as <spam lang="am">niter kibbeh</spam>. <span lang="am">Kitfo</span> is renowned for its bold flavor and luxurious texture.</p>
-        <p>Depending on how much you are preparing, the preparation time varies. <br>But for this recipe, the cooking time
+            clarified butter known as <spam lang="am">niter kibbeh</spam>. <span lang="am">Kitfo</span> is renowned for its bold flavor and luxurious texture.</p>
+        <p>Depending on how much you are preparing, the preparation time varies. But for this recipe, the cooking time
             is just about 10 minutes.</p>
     </div>
-    <div>
-        <audio src="../audios/kitfo.mp3" controls></audio>
-        <!-- My plan was to put a follow up audio recipe of Kitfo, which you can guess from the captions or the wireframe diagram, but the length of the audio is not applicable to the 5-10 seconds restrictions. -->
-        <p><a href="../captions/subtitlesaudio.vtt">Click here</a> to get a transcript of the audio</p>
     </div>
     <div>
-        <h2>Ingredients</h2>
-        <ul>
+        <audio class="recipe_audio" src="../audios/kitfo.mp3" controls></audio>
+        <!-- My plan was to put a follow up audio recipe of Kitfo, which you can guess from the captions or the wireframe diagram, but the length of the audio is not applicable to the 5-10 seconds restrictions. -->
+        <p class="recipe_ing"><a class="awesome_link" href="../captions/subtitlesaudio.vtt">Click here</a> to get a transcript of the audio</p>
+    </div>
+    <div class="recipe_container">
+        <div class="recipe_container__item">
+        <h2 class="heading">Ingredients</h2>
+        <ul class="recipe_ing">
             <li>1 kg of top round beef</li>
-            <li>6 teaspoons <a href="../spices.html#mitmita"><em lang="am">Mitmita</em></a> (Click the link if you don't
+            <li>6 teaspoons <a class="awesome_link" href="../spices.html#mitmita"><em lang="am">Mitmita</em></a> (Click the link if you don't
 know what Mitmita is)</li>
             <li>4 tablespoons clarified butter</li>
-            <li>1 teaspoon <a href="../spices.html#korerima"><em lang="am">koremima</em></a> (Click the link if you don't
+            <li>1 teaspoon <a class="awesome_link" href="../spices.html#korerima"><em lang="am">koremima</em></a> (Click the link if you don't
 know what <span lang="am">Koremima</span> is)</li>
             <li>1/4 teaspoon garlic powder</li>
             <li>Salt and black pepper</li>
         </ul>
     </div>
-    <div>
-        <h2>Steps</h2>
+    <div class="recipe_container__item">
+        <h2 class="heading">Steps</h2>
         <ol>
             <li>Cut the meat in small pieces; remove fat and seams.</li>
             <li>In a food processor put small amount of the meat at a time, 
@@ -76,82 +79,73 @@ know what <span lang="am">Koremima</span> is)</li>
                 <br>If preferred, saute the marinated meat for two to three minute   
         </ol>
     </div>
-    <div>
-        <p><strong>Note:</strong> <span lang="am">Kitfo</span> is typically served with <a href="https://www.exploratorium.edu/cooking/bread/recipe-injera.html"><em lang="am">Injera</em></a> or <a href="https://www.cooksinfo.com/kocho"><em lang="am">Kotcho</em></a>.
     </div>
     <div>
-        <h2>Nutritional Facts</h2>
-        <table id="nutritional_facts_kitfo" name="nutritional_facts_kitfo">
+        <p class="recipe_ing"><strong>Note:</strong> <span lang="am">Kitfo</span> is typically served with <a class="awesome_link" href="https://www.exploratorium.edu/cooking/bread/recipe-injera.html"><em lang="am">Injera</em></a> or <a class="awesome_link" href="https://www.cooksinfo.com/kocho"><em lang="am">Kotcho</em></a>.
+    </div>
+    <div class="nutrition">
+        <h2 class="heading">Nutritional Facts</h2>
+        <table class="nutrition_table" id="nutritional_facts_kitfo" name="nutritional_facts_kitfo">
             <tr>
-                <th>Component</th>
-                <th>Amount</th>
-                <th>%Daily Value</th>
+                <th class="nutrition_table__header">Component</th>
+                <th class="nutrition_table__header">Amount</th>
+                <th class="nutrition_table__header">%Daily Value</th>
             </tr>
             <tr>
-                <td>Total Fat</td>
-                <td>21.1g</td>
-                <td>27%</td>
+                <td class="nutrition_table__data">Total Fat</td>
+                <td class="nutrition_table__data">21.1g</td>
+                <td class="nutrition_table__data">27%</td>
             </tr>
             <tr>
-                <td>Saturated Fat</td>
-                <td>10.4g</td>
-                <td>51.35%</td>
+                <td class="nutrition_table__data">Saturated Fat</td>
+                <td class="nutrition_table__data">10.4g</td>
+                <td class="nutrition_table__data">51.35%</td>
             </tr>
             <tr>
-                <td>Cholesterol</td>
-                <td>187.5mg</td>
-                <td>62.5%</td>
+                <td class="nutrition_table__data">Cholesterol</td>
+                <td class="nutrition_table__data">187.5mg</td>
+                <td class="nutrition_table__data">62.5%</td>
             </tr>
             <tr>
-                <td>Sodium</td>
-                <td>2222.8mg</td>
-                <td>96.4%</td>
+                <td class="nutrition_table__data">Sodium</td>
+                <td class="nutrition_table__data">2222.8mg</td>
+                <td class="nutrition_table__data">96.4%</td>
             </tr>
             <tr>
-                <td>Total Carbohydrate</td>
-                <td>1.2g</td>
-                <td>0.4%</td>
+                <td class="nutrition_table__data">Total Carbohydrate</td>
+                <td class="nutrition_table__data">1.2g</td>
+                <td class="nutrition_table__data">0.4%</td>
             </tr>
             <tr>
-                <td>Dietary Fiber</td>
-                <td>0.5g</td>
-                <td>1.8%</td>
+                <td class="nutrition_table__data">Dietary Fiber</td>
+                <td class="nutrition_table__data">0.5g</td>
+                <td class="nutrition_table__data">1.8%</td>
             </tr>
             <tr>
-                <td>Protein</td>
-                <td>32.8g</td>
+                <td class="nutrition_table__data">Protein</td>
+                <td class="nutrition_table__data">32.8g</td>
             </tr>
         </table>
     </div>
-    <div>
-        <h2>Comments</h2>
+    <div class="comments">
+        <h2 class="heading">Comments</h2>
         <form method="get" action="">
-            <input  id="comments" placeholder="Enter your comment here">
-            <input  id="comment_submit" type="submit" value="comment">
+            <textarea style="width: 100%;" class="comment_input" id="comments" placeholder="Enter your comment here"></textarea>
+            <input id="comment_submit" type="button" value="comment">
         </form>
         <label for="comments" hidden>A form to place comments regarding this recipe</label>
-        <label for="comment_submit" hidden>Submit Comment</label>
-        <ul>
-            <li>
-                An amazing recipe
-            </li>
-            <li>
-                Delightful
-            </li>
-            <li>
-                Too spicy for me!
-            </li>
-        </ul>
+        <label for="comment_submit" hidden>Submit the comment</label>
+        <ul id="container">
     </div>
-    <footer>
-        <div>
-        <ul>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><ul><span>Socials</span><li><a href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine</li>
-                            <li><a href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></li>
-        </ul>
-        </div>
-    </footer>
+</main>
+<footer class="footer">
+    <ul class="footer_list">
+        <li class="greyed_part footer_list__item"><a class="awesome_link" href="../about.html">About Us</a></li>
+        <li class="greyed_part footer_list__item"><a class="awesome_link" href="../contact.html">Contact</a></li>
+        <li class="greyed_part footer_list__item"><ul><span>Socials</span><li><a class="awesome_link" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine</li>
+                        <li><a class="awesome_link" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></li>
+    </ul>
+</footer>
+<script src="../js/script.js"></script>
 </body>
 </html>
