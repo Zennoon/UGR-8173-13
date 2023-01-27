@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,33 +11,38 @@
     <script src="https://kit.fontawesome.com/4a80508866.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title heading"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
-        <form class="header__search_form" method="get">
-            <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
-        </form>
-        <label for="search" hidden>Search ethiopiancuisine.com</label>
-        <nav class="header__navigation">
-            <ul class="navigation_list">
-                <li class="navigation_list__item"><a class="nav_link" href="./index.html">Home</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./recipes.html">Recipes</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./restaurants.html">Restaurants</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./spices.html">Spices</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./about.html">About Us</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<main>
-    <div class="greyed_part">
-        <h1 class="heading">Ethiopian Spices</h1>
-        <div class="container_spices">
-        <div class="sample_images_spices">
-            <img class="sample_images__image" src="./images/spices1.jpeg" alt="An image of a collection of spices typically used in Ethiopia">
-            <img class="sample_images__image" src="./images/spices2.jpeg" alt="An image of a brand of baltina which are packages of spices of some kind">
-            <img class="sample_images__image" src="./images/spices3.jpeg" alt="An image of a collection of spices typically used in Ethiopia">
+    <header class="container">
+        <div class="row">
+            <h1 class="text-center col-md-6 col-lg-12"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
+            <form class="col-md-6 col-lg-6 my-1" method="get">
+                <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
+                
+            </form>
+            <label for="search" hidden>Search ethiopiancuisine.com</label>
+            <nav class="col-lg-6">
+                <div class="btn-group">
+                    <a class="btn btn-danger" href="./index.html">Home</a>
+                    <a class="btn btn-danger" href="./recipes.html">Recipes</a>
+                    <a class="btn btn-danger" href="./restaurants.html">Restaurants</a>
+                    <a class="btn btn-danger" href="./spices.html">Spices</a>
+                    <a class="btn btn-danger" href="./about.html">About Us</a>
+                    <a class="btn btn-danger" href="./contact.html">Contact</a>
+                </ul>
+            </nav>
         </div>
-        <div class="paragraphs">
+    </header>
+<main>
+    <div class="container-xl justify-content-between bg-secondary m-2 p-2 rounded">
+        <h1 class="row m-3 text-decoration-underline text-light">Ethiopian Spices</h1>
+        <div class="row">
+        <div class="col-md-5 col-lg-12 container p-4 m-2">
+            <div class="row">
+            <img class="col-lg-4 img-fluid my-1" style="max-width: 400px; max-height: 400px;" src="./images/spices1.jpeg" alt="An image of a collection of spices typically used in Ethiopia">
+            <img class="col-lg-4 img-fluid my-1" style="max-width: 400px; max-height: 400px;" src="./images/spices2.jpeg" alt="An image of a brand of baltina which are packages of spices of some kind">
+            <img class="col-lg-4 img-fluid my-1" style="max-width: 400px; max-height: 400px;" src="./images/spices3.jpeg" alt="An image of a collection of spices typically used in Ethiopia">
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-12 bg-warning p-4 m-2 rounded">
         <p>Ethiopian houses have one of the most diverse seasoning drawers in the
 world.
         </p>
@@ -50,25 +56,27 @@ world.
         </div>
         </div>
     </div>
-        <div class="greyed_part">
-            <h2 class="heading">Most used spices in Ethiopian dishes</h2>
+        <div class="container-xl p-2 m-2 bg-secondary rounded justify-content-center">
+            <h2 class="row p-3">Most used spices in Ethiopian dishes</h2>
+            <div class="row">
             <p>You can click on the spices' name to find out more about that spice.</p>
-            <ul class="spices">
-                <li class="spices__item section" id="berbere" lang="am"><a class="awesome_link" href="https://www.allrecipes.com/recipe/255863/berbere-spice-blend/">Berbere</a><img class="sample_images__image" src="./images/berbere.jpeg" alt="An Image of Berbere, a red spice blend that is made from red pepper"></li>
-                <li class="spices__item section" id="mitmita" lang="am"><a class="awesome_link" href="https://www.196flavors.com/mitmita/">Mitmita</a><img class="sample_images__image" src="./images/mitmita.jpeg" alt="An Image of Mitmita, a spice usually used in Gurage Region with Kitfo, Ayib and Gomen"></li>
-                <li class="spices__item section" id="korerima" lang="am"><a class="awesome_link" href="https://www.thespruceeats.com/badi-elaichi-black-cardamom-1957875">Korerima</a><img class="sample_images__image" src="./images/korerima.jpeg" alt="An Image Of Korerima, a spice that is famous in India and Nepal"></li>
-                <li class="spices__item section" id="niter_kibbeh" lang="am"><a class="awesome_link" href="https://www.daringgourmet.com/niter-kibbeh-ethiopian-spiced-clarified-butter/">Niter Kibbeh</a><img class="sample_images__image" src="./images/niterKibe.jpeg" alt="An Image of Niter Kibbeh, a purified form of butter infused with other spices like korerima and sometimes black seed"></li>
-                <li class="spices__item section" lang="am"><a class="awesome_link" href="https://www.brundo.com/blogs/recipes/how-to-cook-ethiopian-shiro-shuro-ethiopian-chickpea-blend">Shiro Blend</a><img class="sample_images__image" src="./images/shiro_blend.jpeg" alt="An Image of Shiro Blend, a spice blend used to make one of the most eaten foods in Ethiopia, Shiro"></li>
+            </div>
+            <ul class="row">
+                <li class="col-md-6 col-lg-4" id="berbere" lang="am"><a class="text-light" href="https://www.allrecipes.com/recipe/255863/berbere-spice-blend/">Berbere</a><br><img class="img-fluid my-1" style="height: 250px; width: 250px;" src="./images/berbere.jpeg" alt="An Image of Berbere, a red spice blend that is made from red pepper"></li>
+                <li class="col-md-6 col-lg-4" id="mitmita" lang="am"><a class="text-light" href="https://www.196flavors.com/mitmita/">Mitmita</a><br><img class="img-fluid my-1" style="height: 250px; width: 250px;" src="./images/mitmita.jpeg" alt="An Image of Mitmita, a spice usually used in Gurage Region with Kitfo, Ayib and Gomen"></li>
+                <li class="col-md-6 col-lg-4" id="korerima" lang="am"><a class="text-light" href="https://www.thespruceeats.com/badi-elaichi-black-cardamom-1957875">Korerima</a><br><img class="img-fluid my-1" style="height: 250px; width: 250px;" src="./images/korerima.jpeg" alt="An Image Of Korerima, a spice that is famous in India and Nepal"></li>
+                <li class="col-md-6 col-lg-6" id="niter_kibbeh" lang="am"><a class="text-light" href="https://www.daringgourmet.com/niter-kibbeh-ethiopian-spiced-clarified-butter/">Niter Kibbeh</a><br><img class="img-fluid my-1" style="height: 250px; width: 250px;" src="./images/niterKibe.jpeg" alt="An Image of Niter Kibbeh, a purified form of butter infused with other spices like korerima and sometimes black seed"></li>
+                <li class="col-md-12 col-lg-6" lang="am"><a class="text-light" href="https://www.brundo.com/blogs/recipes/how-to-cook-ethiopian-shiro-shuro-ethiopian-chickpea-blend">Shiro Blend</a><br><img class="img-fluid my-1" style="height: 250px; width: 250px;" src="./images/shiro_blend.jpeg" alt="An Image of Shiro Blend, a spice blend used to make one of the most eaten foods in Ethiopia, Shiro"></li>
             </ul>
         </div>
     </div>
 </main>
-<footer class="footer">
-    <ul class="footer_list">
-        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./about.html">About Us</a></li>
-        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./contact.html">Contact</a></li>
-        <li class="greyed_part footer_list__item"><ul><span>Socials</span><li><a class="awesome_link" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine</li>
-                        <li><a class="awesome_link" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></li>
+<footer class="container-lg" style="padding: 0px;">
+    <ul class="row">
+        <a class="col-sm-5 col-md-3 btn btn-secondary m-1" href="./about.html">About Us</a>
+        <a class="col-sm-6 col-md-4 btn btn-secondary m-1" href="./contact.html">Contact</a>
+        <div class="col-md-4 btn bg-secondary m-1"><ul><span>Socials</span><li><a class="text-light fw-bold" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine
+        <li><a class="text-light fw-bold" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></div>
     </ul>
 </footer>
 </body>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +11,39 @@
     <script src="https://kit.fontawesome.com/4a80508866.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title heading"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
-        <form class="header__search_form" method="get">
-            <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
-        </form>
-        <label for="search" hidden>Search ethiopiancuisine.com</label>
-        <nav class="header__navigation">
-            <ul class="navigation_list">
-                <li class="navigation_list__item"><a class="nav_link" href="./index.html">Home</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./recipes.html">Recipes</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./restaurants.html">Restaurants</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./spices.html">Spices</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./about.html">About Us</a></li>
-                <li class="navigation_list__item"><a class="nav_link" href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-</header>
+    <header class="container">
+        <div class="row">
+            <h1 class="text-center col-md-6 col-lg-12"><i style="color: rgb(238, 16, 16)" class="fas fa-pepper-hot"></i>Ethiopian Cuisine</h1>
+            <form class="col-md-6 col-lg-6 my-1" method="get">
+                <input class="search_input" id="search" placeholder="Enter Search Key" type="search"><input value="Search" type="submit">
+                
+            </form>
+            <label for="search" hidden>Search ethiopiancuisine.com</label>
+            <nav class="col-lg-6">
+                <div class="btn-group">
+                    <a class="btn btn-danger" href="./index.html">Home</a>
+                    <a class="btn btn-danger" href="./recipes.html">Recipes</a>
+                    <a class="btn btn-danger" href="./restaurants.html">Restaurants</a>
+                    <a class="btn btn-danger" href="./spices.html">Spices</a>
+                    <a class="btn btn-danger" href="./about.html">About Us</a>
+                    <a class="btn btn-danger" href="./contact.html">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
 <main>
-    <div class="greyed_part">
-        <h1 class="heading">About Us</h1>
+    <div class="bg-secondary p-3 m-3 rounded">
+        <h1 class="display-5 text-light">About Us</h1>
         <div>
             <img src="./images/ecgroup1.jpeg" alt="An Image Of The Ethiopian Cuisine Group" width="100%" height="500px">
         </div>
-        <div class="about_articles">
-        <div class="about_articles__article about_articles__article--color-green">
+        <div class="container-xl">
+        <div class="row">
+        <div class="col-md-5 col-lg-3 bg-success text-light my-3 mx-1 rounded">
             <h2  class="about_articles__heading heading">Our Story</h2>
             <p>The Ethiopian Cuisine team is made up of Addis Ababa University Students who come from different backgrounds and different cultures, but united <br>in the idea that Ethiopian culture is worth sharing and worth experiencing.</p>
         </div>
-        <div class="about_articles__article about_articles__article--color-yellow">
+        <div class="col-md-6 col-lg-4 bg-warning text-dark my-3 mx-1 rounded">
             <h2 class="about_articles__heading heading">Our Motive</h2>
             <p>
                 Ethiopia is one of the most diverse countries in the world in terms of culture and practices. 
@@ -47,20 +52,21 @@
                 <br>This is what motivated us to organize our resources to create a platform that will share the amazing dishes available in the Ethiopian cuisine.
             </p>
         </div>
-        <div class="about_articles__article about_articles__article--color-red">
+        <div class="col-md-12 col-lg-4 bg-danger text-light my-3 mx-1 rounded">
             <h2 class="about_articles__heading heading">Our Mission</h2>
             <p>The goal of this website is to eventually make the Ethiopian cuisine widely known in the world
                 <br>and place it in tis rightful place among the best cuisines in the world.</p>
         </div>
         </div>
+        </div>
     </div>
 </main>
-<footer class="footer">
-    <ul class="footer_list">
-        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./about.html">About Us</a></li>
-        <li class="greyed_part footer_list__item"><a class="awesome_link" href="./contact.html">Contact</a></li>
-        <li class="greyed_part footer_list__item"><ul><span>Socials</span><li><a class="awesome_link" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine</li>
-                        <li><a class="awesome_link" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></li>
+<footer class="container-lg" style="padding: 0px;">
+    <ul class="row">
+        <a class="col-sm-5 col-md-3 btn btn-secondary m-1" href="./about.html">About Us</a>
+        <a class="col-sm-6 col-md-4 btn btn-secondary m-1" href="./contact.html">Contact</a>
+        <div class="col-md-4 btn btn-secondary m-1"><ul><span>Socials</span><li><a class="text-light fw-bold" href="https://www.twitter.com" target="_blank">Twitter</a>: @Ethiopian_Cuisine
+        <li><a class="text-light fw-bold" href="https://www.instagram.com" target="_blank">Instagram</a>: @Ethiopian_Cuisine</li></ul></div>
     </ul>
 </footer>
 </body>
